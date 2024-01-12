@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="img/icon.png" />
+    <title>MyMovie</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg position-fixed sticky-top vw-100 flex-nowrap"
+      style="padding-right: 10%; padding-left: 10%">
+      <div class="container px-0">
+        <h1 class="navbar-brand m-0 fs-4">MYMOVIE</h1>
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+          style="padding-right: 5%; padding-left: 10%">
+          <div class="offcanvas-header p-0 pt-2">
+            <h1
+              class="navbar-brand py-0 fw-bold m-0 fs-4"
+              id="offcanvasNavbarLabel">
+              MYMOVIE
+            </h1>
+            <button
+              type="button"
+              class="bg-transparent border-0"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close">
+              <i class="bi bi-x fs-4 fw-bold"></i>
+            </button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-start pe-3 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link fw-bold" aria-current="page" href="#hero"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" aria-current="page" href="#movies"
+                  >Movies</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" aria-current="page" href="#series"
+                  >TV Series</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" aria-current="page" href="#animated"
+                  >Animated Movies</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" aria-current="page" href="#"
+                  >My Lists</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="nav-component d-flex gap-3 justify-content-center align-items-center">
+        <i class="bi bi-search fs-5"></i>
+        <i class="bi bi-bell-fill fs-5"></i>
+        <i class="bi bi-person-fill fs-4"></i>
+      </div>
+      <button
+        class="border d-block d-lg-none border-0 bg-transparent ms-3"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation">
+        <span> <i class="bi bi-list fs-4"></i></span>
+      </button>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Hero -->
+    <section id="hero" class="carousel w-100 h-100">
+      <!-- Carousel Item -->
+      <div class="vw-100 vh-100">
+        <div
+          class="vw-100 vh-100"
+          style="
+            background-image: url(img/bg/uncharted.svg);
+            background-position: center;
+            background-size: cover;
+          ">
+          <div
+            class="d-flex flex-column justify-content-center h-100 w-100"
+            style="padding-right: 10%; padding-left: 10%">
+            <div class="movie-genre d-flex">
+              <p>Mystery</p>
+              <p>Action</p>
+              <p>Drama</p>
+            </div>
+            <h1 class="movie-title">UNCHARTED</h1>
+            <p class="movie-hero-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
+              dolores cupiditate quae nobis reiciendis. Iusto reprehenderit non
+              nisi, excepturi rem autem illum quod laborum vero veritatis vitae
+              labore sapiente hic sed iure aliquam sequi fugiat nostrum
+              blanditiis voluptatibus provident facere ut nam. Ut alias autem
+              esse qui sint voluptates voluptatum maiores, ea optio cum dolor
+              commodi, vitae quibusdam. Eos nemo minima ratione provident
+              incidunt tempore ullam dolore at eum officia, ipsa sequi
+              architecto, eveniet aspernatur, obcaecati rem. Reiciendis
+              accusantium perferendis numquam praesentium maxime officiis illo
+              quo quibusdam, libero ratione harum ullam eligendi enim natus
+              sapiente aut alias? Sed, repudiandae soluta!
+            </p>
+            <div class="d-flex gap-4 fw-bold fs-6 align-items-center my-4">
+              <p>IMDb:6,3</p>
+              <p style="letter-spacing: 4px">1h56m</p>
+              <p class="border" style="padding: 0.2rem">10+</p>
+            </div>
+            <div class="d-flex gap-3 hero-button">
+              <button class="btn rounded-pill fw-bold" type="button">
+                Watch Now
+              </button>
+              <button class="btn rounded-pill fw-bold" type="button">
+                Add Lists
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Item -->
+      <div class="vw-100 vh-100">
+        <div
+          class="vw-100 vh-100"
+          style="
+            background-image: url(img/bg/bb.svg);
+            background-position: center;
+            background-size: cover;
+          ">
+          <div
+            class="d-flex flex-column justify-content-center h-100 w-100"
+            style="padding-right: 10%; padding-left: 10%">
+            <div class="movie-genre d-flex">
+              <p>Crime</p>
+              <p>Drama</p>
+              <p>Thriller</p>
+            </div>
+            <h1 class="movie-title">breaking bad</h1>
+            <p class="movie-hero-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
+              dolores cupiditate quae nobis reiciendis. Iusto reprehenderit non
+              nisi, excepturi rem autem illum quod laborum vero veritatis vitae
+              labore sapiente hic sed iure aliquam sequi fugiat nostrum
+              blanditiis voluptatibus provident facere ut nam. Ut alias autem
+              esse qui sint voluptates voluptatum maiores, ea optio cum dolor
+              commodi, vitae quibusdam. Eos nemo minima ratione provident
+              incidunt tempore ullam dolore at eum officia, ipsa sequi
+              architecto, eveniet aspernatur, obcaecati rem. Reiciendis
+              accusantium perferendis numquam praesentium maxime officiis illo
+              quo quibusdam, libero ratione harum ullam eligendi enim natus
+              sapiente aut alias? Sed, repudiandae soluta!
+            </p>
+            <div class="d-flex gap-4 fw-bold fs-6 align-items-center my-4">
+              <p>IMDb:9,6</p>
+              <p style="letter-spacing: 4px">50h30m</p>
+              <p class="border" style="padding: 0.2rem">10+</p>
+            </div>
+            <div class="d-flex gap-3 hero-button">
+              <button class="btn rounded-pill fw-bold" type="button">
+                Watch Now
+              </button>
+              <button class="btn rounded-pill fw-bold" type="button">
+                Add Lists
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Item -->
+      <div class="vw-100 vh-100">
+        <div
+          class="vw-100 vh-100"
+          style="
+            background-image: url(img/bg/batman.svg);
+            background-position: center;
+            background-size: cover;
+          ">
+          <div
+            class="d-flex flex-column justify-content-center h-100 w-100"
+            style="padding-right: 10%; padding-left: 10%">
+            <div class="movie-genre d-flex">
+              <p>Action</p>
+              <p>Crime</p>
+              <p>Drama</p>
+            </div>
+            <h1 class="movie-title">the batman</h1>
+            <p class="movie-hero-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
+              dolores cupiditate quae nobis reiciendis. Iusto reprehenderit non
+              nisi, excepturi rem autem illum quod laborum vero veritatis vitae
+              labore sapiente hic sed iure aliquam sequi fugiat nostrum
+              blanditiis voluptatibus provident facere ut nam. Ut alias autem
+              esse qui sint voluptates voluptatum maiores, ea optio cum dolor
+              commodi, vitae quibusdam. Eos nemo minima ratione provident
+              incidunt tempore ullam dolore at eum officia, ipsa sequi
+              architecto, eveniet aspernatur, obcaecati rem. Reiciendis
+              accusantium perferendis numquam praesentium maxime officiis illo
+              quo quibusdam, libero ratione harum ullam eligendi enim natus
+              sapiente aut alias? Sed, repudiandae soluta!
+            </p>
+            <div class="d-flex gap-4 fw-bold fs-6 align-items-center my-4">
+              <p>IMDb:7,8</p>
+              <p style="letter-spacing: 4px">2h56m</p>
+              <p class="border" style="padding: 0.2rem">10+</p>
+            </div>
+            <div class="d-flex gap-3 hero-button">
+              <button class="btn rounded-pill fw-bold" type="button">
+                Watch Now
+              </button>
+              <button class="btn rounded-pill fw-bold" type="button">
+                Add Lists
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Item -->
+      <div class="vw-100 vh-100">
+        <div
+          class="vw-100 vh-100"
+          style="
+            background-image: url(img/bg/blue-pale.svg);
+            background-position: center;
+            background-size: cover;
+          ">
+          <div
+            class="d-flex flex-column justify-content-center h-100 w-100"
+            style="padding-right: 10%; padding-left: 10%">
+            <div class="movie-genre d-flex">
+              <p>Crime</p>
+              <p>Horror</p>
+              <p>Mystery</p>
+            </div>
+            <h1 class="movie-title">The Pale Blue Eye</h1>
+            <p class="movie-hero-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
+              dolores cupiditate quae nobis reiciendis. Iusto reprehenderit non
+              nisi, excepturi rem autem illum quod laborum vero veritatis vitae
+              labore sapiente hic sed iure aliquam sequi fugiat nostrum
+              blanditiis voluptatibus provident facere ut nam. Ut alias autem
+              esse qui sint voluptates voluptatum maiores, ea optio cum dolor
+              commodi, vitae quibusdam. Eos nemo minima ratione provident
+              incidunt tempore ullam dolore at eum officia, ipsa sequi
+              architecto, eveniet aspernatur, obcaecati rem. Reiciendis
+              accusantium perferendis numquam praesentium maxime officiis illo
+              quo quibusdam, libero ratione harum ullam eligendi enim natus
+              sapiente aut alias? Sed, repudiandae soluta!
+            </p>
+            <div class="d-flex gap-4 fw-bold fs-6 align-items-center my-4">
+              <p>IMDb:6,8</p>
+              <p style="letter-spacing: 4px">2h8m</p>
+              <p class="border" style="padding: 0.2rem">10+</p>
+            </div>
+            <div class="d-flex gap-3 hero-button">
+              <button class="btn rounded-pill fw-bold" type="button">
+                Watch Now
+              </button>
+              <button class="btn rounded-pill fw-bold" type="button">
+                Add Lists
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Item -->
+      <div class="vw-100 vh-100">
+        <div
+          class="vw-100 vh-100"
+          style="
+            background-image: url(img/bg/matrix.svg);
+            background-position: center;
+            background-size: cover;
+          ">
+          <div
+            class="d-flex flex-column justify-content-center h-100 w-100"
+            style="padding-right: 10%; padding-left: 10%">
+            <div class="movie-genre d-flex">
+              <p>Action</p>
+              <p>Sci-fi</p>
+            </div>
+            <h1 class="movie-title">the matrix ressurection</h1>
+            <p class="movie-hero-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
+              dolores cupiditate quae nobis reiciendis. Iusto reprehenderit non
+              nisi, excepturi rem autem illum quod laborum vero veritatis vitae
+              labore sapiente hic sed iure aliquam sequi fugiat nostrum
+              blanditiis voluptatibus provident facere ut nam. Ut alias autem
+              esse qui sint voluptates voluptatum maiores, ea optio cum dolor
+              commodi, vitae quibusdam. Eos nemo minima ratione provident
+              incidunt tempore ullam dolore at eum officia, ipsa sequi
+              architecto, eveniet aspernatur, obcaecati rem. Reiciendis
+              accusantium perferendis numquam praesentium maxime officiis illo
+              quo quibusdam, libero ratione harum ullam eligendi enim natus
+              sapiente aut alias? Sed, repudiandae soluta!
+            </p>
+            <div class="d-flex gap-4 fw-bold fs-6 align-items-center my-4">
+              <p>IMDb:5,7</p>
+              <p style="letter-spacing: 4px">2h28m</p>
+              <p class="border" style="padding: 0.2rem">10+</p>
+            </div>
+            <div class="d-flex gap-3 hero-button">
+              <button class="btn rounded-pill fw-bold" type="button">
+                Watch Now
+              </button>
+              <button class="btn rounded-pill fw-bold" type="button">
+                Add Lists
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Item -->
+      <div class="vw-100 vh-100">
+        <div
+          class="vw-100 vh-100"
+          style="
+            background-image: url(img/bg/subscribe.svg);
+            background-position: center;
+            background-size: cover;
+          ">
+          <div
+            class="d-flex flex-column justify-content-center h-100 w-100"
+            style="padding-right: 10%; padding-left: 10%">
+            <div class="movie-genre d-flex">
+              <p>Mystery</p>
+              <p>Action</p>
+              <p>Drama</p>
+            </div>
+            <h1 class="movie-title">subscribe</h1>
+            <p class="movie-hero-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
+              dolores cupiditate quae nobis reiciendis. Iusto reprehenderit non
+              nisi, excepturi rem autem illum quod laborum vero veritatis vitae
+              labore sapiente hic sed iure aliquam sequi fugiat nostrum
+              blanditiis voluptatibus provident facere ut nam. Ut alias autem
+              esse qui sint voluptates voluptatum maiores, ea optio cum dolor
+              commodi, vitae quibusdam. Eos nemo minima ratione provident
+              incidunt tempore ullam dolore at eum officia, ipsa sequi
+              architecto, eveniet aspernatur, obcaecati rem. Reiciendis
+              accusantium perferendis numquam praesentium maxime officiis illo
+              quo quibusdam, libero ratione harum ullam eligendi enim natus
+              sapiente aut alias? Sed, repudiandae soluta!
+            </p>
+            <div class="d-flex gap-4 fw-bold fs-6 align-items-center my-4">
+              <p>IMDb:6,3</p>
+              <p style="letter-spacing: 4px">1h56m</p>
+              <p class="border" style="padding: 0.2rem">10+</p>
+            </div>
+            <div class="d-flex gap-3 hero-button">
+              <button class="btn rounded-pill fw-bold" type="button">
+                Watch Now
+              </button>
+              <button class="btn rounded-pill fw-bold" type="button">
+                Add Lists
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Item -->
+      <div class="vw-100 vh-100">
+        <div
+          class="vw-100 vh-100"
+          style="
+            background-image: url(img/bg/thor.svg);
+            background-position: center;
+            background-size: cover;
+          ">
+          <div
+            class="d-flex flex-column justify-content-center h-100 w-100"
+            style="padding-right: 10%; padding-left: 10%">
+            <div class="movie-genre d-flex">
+              <p>Action</p>
+              <p>Adventure</p>
+              <p>Comedy</p>
+            </div>
+            <h1 class="movie-title">Thor: Love and Thunder</h1>
+            <p class="movie-hero-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
+              dolores cupiditate quae nobis reiciendis. Iusto reprehenderit non
+              nisi, excepturi rem autem illum quod laborum vero veritatis vitae
+              labore sapiente hic sed iure aliquam sequi fugiat nostrum
+              blanditiis voluptatibus provident facere ut nam. Ut alias autem
+              esse qui sint voluptates voluptatum maiores, ea optio cum dolor
+              commodi, vitae quibusdam. Eos nemo minima ratione provident
+              incidunt tempore ullam dolore at eum officia, ipsa sequi
+              architecto, eveniet aspernatur, obcaecati rem. Reiciendis
+              accusantium perferendis numquam praesentium maxime officiis illo
+              quo quibusdam, libero ratione harum ullam eligendi enim natus
+              sapiente aut alias? Sed, repudiandae soluta!
+            </p>
+            <div class="d-flex gap-4 fw-bold fs-6 align-items-center my-4">
+              <p>IMDb:6,2</p>
+              <p style="letter-spacing: 4px">1h58m</p>
+              <p class="border" style="padding: 0.2rem">10+</p>
+            </div>
+            <div class="d-flex gap-3 hero-button">
+              <button class="btn rounded-pill fw-bold" type="button">
+                Watch Now
+              </button>
+              <button class="btn rounded-pill fw-bold" type="button">
+                Add Lists
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Hero -->
+
+    <!-- Main -->
+    <main style="padding-right: 5%; padding-left: 5%" class="py-5">
+      <!-- Filter buttons -->
+      <div class="d-flex flex-wrap gap-1 pb-5" id="filterButtons">
+        <button
+          class="btn btn-filter rounded-pill fw-bold active"
+          type="button"
+          data-filter=".all">
+          All
+        </button>
+        <button
+          class="btn btn-filter rounded-pill fw-bold"
+          type="button"
+          data-filter=".action">
+          Action
+        </button>
+        <button
+          class="btn btn-filter rounded-pill fw-bold"
+          type="button"
+          data-filter=".adventure">
+          Adventure
+        </button>
+        <button
+          class="btn btn-filter rounded-pill fw-bold"
+          type="button"
+          data-filter=".biography">
+          Biography
+        </button>
+        <button
+          class="btn btn-filter rounded-pill fw-bold"
+          type="button"
+          data-filter=".crime">
+          Crime
+        </button>
+        <button
+          class="btn btn-filter rounded-pill fw-bold"
+          type="button"
+          data-filter=".comedy">
+          Comedy
+        </button>
+        <button
+          class="btn btn-filter rounded-pill fw-bold"
+          type="button"
+          data-filter=".drama">
+          Drama
+        </button>
+        <button
+          class="btn btn-filter rounded-pill fw-bold"
+          type="button"
+          data-filter=".fantasy">
+          Fantasy
+        </button>
+        <button
+          class="btn btn-filter rounded-pill fw-bold"
+          type="button"
+          data-filter=".historical">
+          Historical
+        </button>
+        <button
+          class="btn btn-filter rounded-pill fw-bold"
+          type="button"
+          data-filter=".horror">
+          Horror
+        </button>
+        <button
+          class="btn btn-filter rounded-pill fw-bold"
+          type="button"
+          data-filter=".musical">
+          Musical
+        </button>
+        <button
+          class="btn btn-filter rounded-pill fw-bold"
+          type="button"
+          data-filter=".sci-fi">
+          Sci-fi
+        </button>
+        <button
+          class="btn btn-filter rounded-pill fw-bold"
+          type="button"
+          data-filter=".sprort">
+          Sport
+        </button>
+        <button
+          class="btn btn-filter rounded-pill fw-bold"
+          type="button"
+          data-filter=".triller">
+          Thriller
+        </button>
+        <button
+          class="btn btn-filter rounded-pill fw-bold"
+          type="button"
+          data-filter=".popular">
+          Popular
+        </button>
+      </div>
+      <!-- Movies -->
+      <div id="movies" x-data="movies">
+        <h1 class="main mb-5">Movies</h1>
+        <div class="movie-container d-flex flex-wrap gap-3">
+          <template x-for="(item, index) in items" x-key="index">
+            <!-- Movies card -->
+            <div
+              class="card m-1 movie-card bg-transparent border-0 positition relative all"
+              :class="item.filter ? item.filter.split(' ').map(filter => filter.toLowerCase()).join(' ') : ''"
+              style="width: 10rem; cursor: pointer"
+              @click="redirectToDetails(item)">
+              <img :alt="item.title" :src="item.img" class="card-img-top" />
+              <div class="card-body px-0 text-center">
+                <h5
+                  class="main card-title movie-card-title"
+                  x-text="item.title"></h5>
+                <p class="card-text movie-card-genre" x-text="item.genre"></p>
+              </div>
+              <div
+                class="imdb-box d-flex flex-column justify-content-center text-center">
+                <h5 class="main imdb-score m-0" x-text="item.imdbScore"></h5>
+                <p class="m-0">IMDb</p>
+              </div>
+            </div>
+          </template>
+        </div>
+      </div>
+      <!-- TV series-->
+      <div id="series" x-data="series">
+        <h1 class="main mb-5">TV Series</h1>
+        <div class="movie-container d-flex flex-wrap gap-3">
+          <template
+            x-for="(item,index) in items"
+            x-key="index"
+            style="display: none"
+            ><!-- Movies card -->
+            <div
+              class="card m-1 movie-card bg-transparent border-0 positition relative all"
+              :class="item.filter ? item.filter.split(' ').map(filter => filter.toLowerCase()).join(' ') : ''"
+              style="width: 10rem; cursor: pointer"
+              @click="redirectToDetails(item)">
+              <img
+                :alt="`item.title`"
+                :src="`${item.img}`"
+                class="card-img-top" />
+              <div class="card-body px-0 text-center">
+                <h5
+                  class="main card-title movie-card-title"
+                  x-text="item.title"></h5>
+                <p class="card-text movie-card-genre" x-text="item.genre"></p>
+              </div>
+              <div
+                class="imdb-box d-flex flex-column justify-content-center text-center">
+                <h5 class="main imdb-score m-0" x-text="item.imdbScore"></h5>
+                <p class="m-0">IMDb</p>
+              </div>
+            </div></template
+          >
+        </div>
+      </div>
+      <!-- Animated-->
+      <div id="animated" x-data="animated">
+        <h1 class="main mb-5">Animated Movies</h1>
+        <div class="movie-container d-flex flex-wrap gap-3">
+          <template
+            x-for="(item,index) in items"
+            x-key="index"
+            style="display: none"
+            ><!-- Movies card -->
+            <div
+              class="card m-1 movie-card bg-transparent border-0 positition relative all"
+              :class="item.filter ? item.filter.split(' ').map(filter => filter.toLowerCase()).join(' ') : ''"
+              style="width: 10rem; cursor: pointer"
+              @click="redirectToDetails(item)">
+              <img
+                :alt="`item.title`"
+                :src="`${item.img}`"
+                class="card-img-top" />
+              <div class="card-body px-0 text-center">
+                <h5
+                  class="main card-title movie-card-title"
+                  x-text="item.title"></h5>
+                <p class="card-text movie-card-genre" x-text="item.genre"></p>
+              </div>
+              <div
+                class="imdb-box d-flex flex-column justify-content-center text-center">
+                <h5 class="main imdb-score m-0" x-text="item.imdbScore"></h5>
+                <p class="m-0">IMDb</p>
+              </div>
+            </div></template
+          >
+        </div>
+      </div>
+    </main>
+    <!-- End of Main -->
+
+    <!-- Subscribe -->
+    <section class="container py-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="subscribe">
+            <div class="subs-content">
+              <h3 class="main">
+                Subscribe to the newsletter and be the first to know about new
+                releases of your favourite TV series and movies
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-6 d-flex align-items-center justify-content-center m-0">
+          <div class="subscribe">
+            <div class="subs-btn">
+              <input
+                type="email"
+                class="email bg-transparent"
+                placeholder="Your email address..." />
+              <button class="subscribe-btn">Subscribe Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Subscribe -->
+
+    <!-- Footer -->
+    <footer
+      class="footer container-fluid py-5 mt-3"
+      style="padding-right: 10%; padding-left: 10%">
+      <div class="main row">
+        <div class="col-lg-3 col-6 mb-4">
+          <p>Movies</p>
+          <p>TV Series</p>
+          <p>Animated Movies</p>
+        </div>
+        <div class="col-lg-3 col-6 mb-4">
+          <p>Privacy Policy</p>
+          <p>Cookie Policy</p>
+          <p>Terms of Use</p>
+        </div>
+        <div class="col-lg-3 col-6 mb-4">
+          <p>Help Center</p>
+          <p>Support</p>
+          <p>FAQ</p>
+        </div>
+        <div class="col-lg-3 col-6 mb-4">
+          <p class="fw-bold fs-3">Follow Us</p>
+          <div class="footer-social">
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Bootstrap Js -->
+    <script src="script/bootstrap.bundle.min.js"></script>
+
+    <!-- Jquery -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"></script>
+
+    <!-- Slick Js -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Alpine Js -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- Carousel -->
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        $(document).ready(function () {
+          $(".carousel").slick({
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 3500,
+          });
+        });
+      });
+    </script>
+
+    <!-- Filter Button -->
+    <script>
+      $(document).ready(function () {
+        $("#filterButtons button").on("click", function () {
+          $("#filterButtons button").removeClass("active");
+
+          $(this).addClass("active");
+        });
+      });
+    </script>
+
+    <!-- Isotope Js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+    <!-- filter -->
+    <script>
+      $(document).ready(function () {
+        var $container = $(".movie-container").isotope({
+          itemSelector: ".card",
+          layoutMode: "fitRows",
+        });
+
+        $("#filterButtons").on("click", "button", function () {
+          var filterValue = $(this).attr("data-filter");
+          $container.isotope({ filter: filterValue });
+        });
+      });
+    </script>
+
+    <!-- Movies -->
+    <script src="script/movies.js"></script>
+    <!-- Series -->
+    <script src="script/series.js"></script>
+    <!-- Animated -->
+    <script src="script/animated.js"></script>
+  </body>
+</html>

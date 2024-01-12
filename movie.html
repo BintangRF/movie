@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="img/icon.png" />
+    <title>MyMovie</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg position-fixed sticky-top vw-100 flex-nowrap"
+      style="padding-right: 10%; padding-left: 10%">
+      <div class="container px-0">
+        <h1 class="navbar-brand m-0 fs-4">MYMOVIE</h1>
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+          style="padding-right: 5%; padding-left: 10%">
+          <div class="offcanvas-header p-0 pt-2">
+            <h1
+              class="navbar-brand py-0 fw-bold m-0 fs-4"
+              id="offcanvasNavbarLabel">
+              MYMOVIE
+            </h1>
+            <button
+              type="button"
+              class="bg-transparent border-0"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close">
+              <i class="bi bi-x fs-4 fw-bold"></i>
+            </button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-start pe-3 ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-bold"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" aria-current="page" href="#movies"
+                  >Movies</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" aria-current="page" href="#series"
+                  >TV Series</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" aria-current="page" href="#animated"
+                  >Animated Movies</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" aria-current="page" href="#"
+                  >My Lists</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="nav-component d-flex gap-3 justify-content-center align-items-center">
+        <i class="bi bi-search fs-5"></i>
+        <i class="bi bi-bell-fill fs-5"></i>
+        <i class="bi bi-person-fill fs-4"></i>
+      </div>
+      <button
+        class="border d-block d-lg-none border-0 bg-transparent ms-3"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation">
+        <span> <i class="bi bi-list fs-4"></i></span>
+      </button>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Main -->
+    <main
+      class="d-flex flex-wrap align-items-center justify-content-start gap-5"
+      style="padding-top: 6rem; padding-right: 10%; padding-left: 10%">
+      <div class="movie-image" style="width: 25rem; height: auto">
+        <img class="w-100" id="movieImg" alt="" />
+      </div>
+      <div class="breaking-bad">
+        <div class="movie-description">
+          <div class="movie-content">
+            <div class="movie-trailer">
+              <h1 id="movieTitle" class="main" style="font-size: 4rem"></h1>
+              <p class="movie-genre d-flex" id="movieGenre"></p>
+            </div>
+            <div class="imdb">
+              <p>IMDb: <span id="movieScore">9,5</span></p>
+              <p id="movieType"></p>
+              <p>Rate: <span id="movieRating"></span></p>
+              <p id="movieCountry"></p>
+              <p>Creator: <span id="movieCreator"></span></p>
+              <p>
+                Actors:
+                <span id="movieCast"></span>
+              </p>
+            </div>
+            <div class="trailer">
+              <div class="save">
+                <i class="fa-regular fa-bookmark"></i>
+                <i class="fa-regular fa-circle-down"></i>
+                <i class="fa-regular fa-share-from-square"></i>
+              </div>
+              <div>
+                <button
+                  class="btn-filter btn rounded-pill fw-bold mt-3"
+                  style="width: 8.5rem">
+                  Watch Trailer
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section style="padding-top: 6rem; padding-right: 10%; padding-left: 10%">
+      <h1 class="main mb-4">Description</h1>
+      <p class="movie-desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ullam.
+        Obcaecati similique tempora ab, magnam nostrum veniam. Repudiandae
+        architecto ipsam veritatis praesentium a. Molestias obcaecati
+        reprehenderit nemo! Molestias sunt atque cupiditate dolorum animi
+        repellendus obcaecati ut ratione esse dolorem quos incidunt dolor eum,
+        in corporis recusandae magni, vel labore velit alias blanditiis. Aliquam
+        vero minus eaque quibusdam harum alias culpa quia vel doloribus velit,
+        tempore, eveniet, quidem fugit magni. Deserunt assumenda ea labore a,
+        placeat voluptatibus voluptatem doloremque consequuntur fuga repellat
+        officia ad minima doloribus quaerat earum quis harum natus quo eaque
+        ipsum quos velit non error. Asperiores, corporis. Beatae.
+      </p>
+    </section>
+    <!-- End of Main -->
+
+    <!-- Comment -->
+    <section style="padding-top: 6rem; padding-right: 10%; padding-left: 10%">
+      <h1 class="main mb-4">Comment</h1>
+      <div class="comment-container d-flex flex-column align-items-end gap-3">
+        <input
+          class="comment-input"
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg"
+          placeholder="Leave a Comment" />
+        <div class="card-comment">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <div class="d-flex align-items-center gap-3">
+              <img src="img/profile/dannie.svg" width="30%" alt="" />
+              <p class="m-0">Dannie Giles</p>
+            </div>
+            <div>
+              <p class="date m-0">25/01/2023 11:36 PM</p>
+            </div>
+          </div>
+          <div>
+            <p class="m-0 comment">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              aperiam repellat cumque deserunt harum nostrum reiciendis, error
+              provident voluptatibus iusto.
+            </p>
+          </div>
+        </div>
+        <div class="card-comment">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <div class="d-flex align-items-center gap-3">
+              <img src="img/profile/nina.svg" width="30%" alt="" />
+              <p class="m-0">Nina Giles</p>
+            </div>
+            <div>
+              <p class="date m-0">25/01/2023 11:36 PM</p>
+            </div>
+          </div>
+          <div>
+            <p class="m-0 comment">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Accusamus cupiditate dolorum quae dolore quis.
+            </p>
+          </div>
+        </div>
+        <div class="card-comment">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <div class="d-flex align-items-center gap-3">
+              <img src="img/profile/ronnie.svg" width="30%" alt="" />
+              <p class="m-0">Ronnie Giles</p>
+            </div>
+            <div>
+              <p class="date m-0">25/01/2023 11:36 PM</p>
+            </div>
+          </div>
+          <div>
+            <p class="m-0 comment">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium voluptatum iure vitae vel veniam neque molestias
+              corporis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Comment -->
+
+    <!-- Footer -->
+    <footer
+      class="footer container-fluid py-5 mt-3"
+      style="padding-right: 10%; padding-left: 10%">
+      <div class="main row">
+        <div class="col-lg-3 col-6 mb-4">
+          <p>Movies</p>
+          <p>TV Series</p>
+          <p>Animated Movies</p>
+        </div>
+        <div class="col-lg-3 col-6 mb-4">
+          <p>Privacy Policy</p>
+          <p>Cookie Policy</p>
+          <p>Terms of Use</p>
+        </div>
+        <div class="col-lg-3 col-6 mb-4">
+          <p>Help Center</p>
+          <p>Support</p>
+          <p>FAQ</p>
+        </div>
+        <div class="col-lg-3 col-6 mb-4">
+          <p class="fw-bold fs-3">Follow Us</p>
+          <div class="footer-social">
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Bootstrap Js -->
+    <script src="script/bootstrap.bundle.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Retrieve movie details from query parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const title = urlParams.get("title");
+        const genre = urlParams.getAll("genre");
+        const img = urlParams.get("img");
+        const imdbScore = urlParams.get("imdbScore");
+        const type = urlParams.get("type");
+        const ageRating = urlParams.get("ageRating");
+        const country = urlParams.get("country");
+        const creator = urlParams.get("creator");
+        const cast = urlParams.get("cast");
+
+        // Update movie details on the page
+        document.getElementById("movieTitle").textContent = title;
+
+        // Update genre details on the page
+        const genreContainer = document.getElementById("movieGenre");
+        genre.forEach((genreText, index) => {
+          const pElement = document.createElement("p");
+          pElement.textContent = genreText;
+          genreContainer.appendChild(pElement);
+        });
+
+        document.getElementById("movieImg").src = img;
+        document.getElementById("movieImg").alt = title;
+        document.getElementById("movieScore").textContent = imdbScore;
+        document.getElementById("movieType").textContent = type;
+        document.getElementById("movieRating").textContent = ageRating;
+        document.getElementById("movieCountry").textContent = country;
+        document.getElementById("movieCreator").textContent = creator;
+        document.getElementById("movieCast").textContent = cast;
+      });
+    </script>
+  </body>
+</html>
